@@ -1,26 +1,17 @@
 <!doctype html>
-<html lang='pt'>
-<head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>BLACKOUT SURVIVAL - Início</title>
-<style>/* css omitted for brevity in script */
-:root{--kaki:#2e3d2f;--accent:#d35400;--beige:#d8c9a1;--muted:rgba(216,201,161,0.85)}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--kaki);color:var(--beige)}
-.header{display:flex;align-items:center;gap:14px;padding:18px 24px;background:rgba(0,0,0,0.14)}
-.header img{height:64px;width:64px}
-.nav{margin-left:auto;display:flex;gap:14px}
-.nav a{color:var(--beige);text-decoration:none;font-weight:700}
-.hero{max-width:1100px;margin:20px auto;padding:18px;background:linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.18));border-radius:10px;text-align:center}
-.hero img{width:100%;height:360px;object-fit:cover;border-radius:8px}
-.container{max-width:1100px;margin:28px auto;padding:0 16px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.06));padding:12px;border-radius:10px}
-.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
-.footer{margin-top:28px;padding:20px;text-align:center;background:rgba(0,0,0,0.12)}
-</style></head>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BLACKOUT SURVIVAL - Início</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+
 <header class="header">
   <img src="logo.png" alt="BLACKOUT SURVIVAL logo">
   <h1>BLACKOUT SURVIVAL</h1>
+  <div class="lang">🇵🇹 <a href="#" style="color:var(--beige);text-decoration:none;margin-left:6px">PT</a> &nbsp; 🇬🇧 <a href="#" style="color:var(--beige);text-decoration:none;margin-left:6px">EN</a> &nbsp; 🇫🇷 <a href="#" style="color:var(--beige);text-decoration:none;margin-left:6px">FR</a></div>
   <nav class="nav">
     <a href="index.html">Início</a>
     <a href="products.html">Produtos</a>
@@ -29,49 +20,54 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--kaki);colo
   </nav>
 </header>
 
-<section class='hero container'>
-  <img src='banner.png' alt='Banner Blackout'>
+<section class="hero container">
+  <img src="banner.png" alt="Banner Blackout">
   <h2>Preparado para o inesperado</h2>
-  <p>Prepare-se para o inesperado — aqui está tudo o que precisa porque a sua segurança é a nossa preocupação</p>
+  <p>Prepare-se para o inesperado — aqui está tudo o que precisa, porque a sua segurança é a nossa preocupação</p>
 </section>
-<main class='container'>
-  <h2 style='text-align:center;margin-bottom:12px'>Nossos Packs</h2>
-  <section class='grid'>
-<article class='card'>
-  <img src='https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=1200&q=60' alt='Pack Básico'>
-  <h3>Pack Básico</h3>
-  <p>Essencial para as primeiras 72 horas. Leve, compacto e pronto para uso imediato.</p>
-  <div style='display:flex;gap:8px;flex-wrap:wrap;margin-top:8px'>
-    <a class='btn' href='product-basico.html'>Ver Produto</a>
-    <a class='btn' href='product-basico.html'>Comprar Unidade</a>
-  </div>
-  <div style='margin-top:8px;color:rgba(216,201,161,0.85)'>Preço: <strong>€79,90</strong></div>
-</article>
-<article class='card'>
-  <img src='https://images.unsplash.com/photo-1604335399105-d1b3d8faef49?auto=format&fit=crop&w=1200&q=60' alt='Pack Intermédio'>
-  <h3>Pack Intermédio</h3>
-  <p>Autonomia para 7 dias: alimentação, energia solar e ferramentas robustas.</p>
-  <div style='display:flex;gap:8px;flex-wrap:wrap;margin-top:8px'>
-    <a class='btn' href='product-intermedio.html'>Ver Produto</a>
-    <a class='btn' href='product-intermedio.html'>Comprar Unidade</a>
-  </div>
-  <div style='margin-top:8px;color:rgba(216,201,161,0.85)'>Preço: <strong>€199,00</strong></div>
-</article>
-<article class='card'>
-  <img src='https://images.unsplash.com/photo-1602233158242-3ba0b6f3ca6b?auto=format&fit=crop&w=1200&q=60' alt='Pack Avançado'>
-  <h3>Pack Avançado</h3>
-  <p>Autossuficiência até 14 dias com energia portátil e equipamento profissional.</p>
-  <div style='display:flex;gap:8px;flex-wrap:wrap;margin-top:8px'>
-    <a class='btn' href='product-avancado.html'>Ver Produto</a>
-    <a class='btn' href='product-avancado.html'>Comprar Unidade</a>
-  </div>
-  <div style='margin-top:8px;color:rgba(216,201,161,0.85)'>Preço: <strong>€499,00</strong></div>
-</article>
-</section>
+
+<main class="container">
+  <h2 style="text-align:center;margin-bottom:12px;color:var(--beige)">Nossos Packs</h2>
+  <section class="grid">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=1200&q=60" alt="Pack Basico">
+      <h3>Pack Básico</h3>
+      <p>Equipamento essencial para 72 horas: água, ração energética e primeiros socorros.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+        <a class="btn" href="product-basico.html">Ver Produto</a>
+        <a class="btn secondary" href="product-basico.html">Comprar Unidade</a>
+      </div>
+      <div class="price">Preço: <strong>€49,90</strong></div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1604335399105-d1b3d8faef49?auto=format&fit=crop&w=1200&q=60" alt="Pack Intermedio">
+      <h3>Pack Avançado</h3>
+      <p>Autonomia até 7 dias com alimentação liofilizada e energia portátil.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+        <a class="btn" href="product-intermedio.html">Ver Produto</a>
+        <a class="btn secondary" href="product-intermedio.html">Comprar Unidade</a>
+      </div>
+      <div class="price">Preço: <strong>€99,90</strong></div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1602233158242-3ba0b6f3ca6b?auto=format&fit=crop&w=1200&q=60" alt="Pack Avancado">
+      <h3>Pack Premium</h3>
+      <p>Kit profissional para longas durações com estação de energia e abrigo.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+        <a class="btn" href="product-avancado.html">Ver Produto</a>
+        <a class="btn secondary" href="product-avancado.html">Comprar Unidade</a>
+      </div>
+      <div class="price">Preço: <strong>€199,90</strong></div>
+    </article>
+  </section>
 </main>
-<footer class='footer'>
-  <p>📧 <a href='mailto:lili.ze0515@hotmail.com' style='color:var(--beige)'>lili.ze0515@hotmail.com</a></p>
+
+<footer class="footer">
+  <p>📧 <a href="mailto:lili.ze0515@hotmail.com">lili.ze0515@hotmail.com</a> — 📞 <a href="https://wa.me/351900000000">+351 900 000 000</a></p>
   <p>© 2025 BLACKOUT SURVIVAL — Todos os direitos reservados</p>
 </footer>
+
 </body>
 </html>
