@@ -1,22 +1,17 @@
-<!doctype html><html lang='pt'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Produtos - BLACKOUT SURVIVAL</title><style>/* css omitted for brevity in script */
-:root{--kaki:#2e3d2f;--accent:#d35400;--beige:#d8c9a1;--muted:rgba(216,201,161,0.85)}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--kaki);color:var(--beige)}
-.header{display:flex;align-items:center;gap:14px;padding:18px 24px;background:rgba(0,0,0,0.14)}
-.header img{height:64px;width:64px}
-.nav{margin-left:auto;display:flex;gap:14px}
-.nav a{color:var(--beige);text-decoration:none;font-weight:700}
-.hero{max-width:1100px;margin:20px auto;padding:18px;background:linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.18));border-radius:10px;text-align:center}
-.hero img{width:100%;height:360px;object-fit:cover;border-radius:8px}
-.container{max-width:1100px;margin:28px auto;padding:0 16px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.06));padding:12px;border-radius:10px}
-.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
-.footer{margin-top:28px;padding:20px;text-align:center;background:rgba(0,0,0,0.12)}
-</style></head><body>
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Produtos - BLACKOUT SURVIVAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <header class="header">
   <img src="logo.png" alt="BLACKOUT SURVIVAL logo">
   <h1>BLACKOUT SURVIVAL</h1>
+  <div class="lang">🇵🇹 PT &nbsp; 🇬🇧 EN &nbsp; 🇫🇷 FR</div>
   <nav class="nav">
     <a href="index.html">Início</a>
     <a href="products.html">Produtos</a>
@@ -24,23 +19,47 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--kaki);colo
     <a href="contacto.html">Contacto</a>
   </nav>
 </header>
-<main class='container'><h2 style='text-align:center;margin-top:18px'>Produtos</h2><section class='grid' style='margin-top:12px'>
-<article class='card'>
-  <img src='https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=1200&q=60' alt='Pack Básico'>
-  <h3>Pack Básico — €79,90</h3>
-  <p>Essencial para as primeiras 72 horas. Leve, compacto e pronto para uso imediato.</p>
-  <a class='btn' href='product-basico.html'>Ver Detalhes</a>
-</article>
-<article class='card'>
-  <img src='https://images.unsplash.com/photo-1604335399105-d1b3d8faef49?auto=format&fit=crop&w=1200&q=60' alt='Pack Intermédio'>
-  <h3>Pack Intermédio — €199,00</h3>
-  <p>Autonomia para 7 dias: alimentação, energia solar e ferramentas robustas.</p>
-  <a class='btn' href='product-intermedio.html'>Ver Detalhes</a>
-</article>
-<article class='card'>
-  <img src='https://images.unsplash.com/photo-1602233158242-3ba0b6f3ca6b?auto=format&fit=crop&w=1200&q=60' alt='Pack Avançado'>
-  <h3>Pack Avançado — €499,00</h3>
-  <p>Autossuficiência até 14 dias com energia portátil e equipamento profissional.</p>
-  <a class='btn' href='product-avancado.html'>Ver Detalhes</a>
-</article>
-</section></main><footer class='footer'><p>© 2025 BLACKOUT SURVIVAL — Todos os direitos reservados</p></footer></body></html>
+
+<main class="container">
+  <h2 style="text-align:center;margin-top:18px;color:var(--beige)">Produtos à Unidade</h2>
+  <section class="grid" style="margin-top:12px">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=60" alt="Lanterna">
+      <h3>Lanterna Solar</h3>
+      <p>Lanterna recarregável por painel solar, autonomia longa.</p>
+      <div class="price">€19,90</div>
+      <a class="btn" href="#">Comprar Unidade</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1593784991024-3fdf3b0e7fd1?auto=format&fit=crop&w=1200&q=60" alt="Faca">
+      <h3>Faca Tática</h3>
+      <p>Faca multifunções resistente, ideal para várias tarefas.</p>
+      <div class="price">€29,90</div>
+      <a class="btn" href="#">Comprar Unidade</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1582719478250-0f3f6b1a7f8d?auto=format&fit=crop&w=1200&q=60" alt="Filtro">
+      <h3>Filtro de Água Portátil</h3>
+      <p>Filtro compacto para uso em campo, remove impurezas.</p>
+      <div class="price">€39,90</div>
+      <a class="btn" href="#">Comprar Unidade</a>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1581579183455-3b298b7d2b2d?auto=format&fit=crop&w=1200&q=60" alt="Kit primeiros socorros">
+      <h3>Kit Primeiros Socorros</h3>
+      <p>Itens essenciais para tratar ferimentos leves.</p>
+      <div class="price">€24,90</div>
+      <a class="btn" href="#">Comprar Unidade</a>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2025 BLACKOUT SURVIVAL — Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
