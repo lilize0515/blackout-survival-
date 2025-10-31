@@ -118,4 +118,77 @@ footer {
   text-align: center;
   color: #2f3b29;
 }
+/* ======== Carrossel e Menu Responsivo ======== */
+.carousel {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: 1s;
+}
+
+.slide {
+  flex: 1 0 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.navbar {
+  background-color: #3d4a31;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  color: white;
+  cursor: pointer;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    width: 100%;
+    background-color: #3d4a31;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu a {
+    display: block;
+    margin: 10px 0;
+  }
+}
 
