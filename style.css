@@ -1,144 +1,110 @@
-/* ------------------------------
-   BLACKOUT SURVIVAL - Estilo principal
-   Tema militar / sobrevivência com fundo camuflado suave
---------------------------------*/
-
+/* ======== Blackout Survival - Estilo Militar ======== */
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f3f3f3;
-  background-image: url('https://www.transparenttextures.com/patterns/camouflage.png');
-  background-repeat: repeat;
-  background-attachment: fixed;
-  color: #222;
+  padding: 0;
+  color: #1a1a1a;
+  background: #e5e5e0 url('https://www.transparenttextures.com/patterns/camouflage.png');
+  background-size: contain;
 }
 
-/* Header */
 header {
-  background-color: #2f3e2f;
-  color: white;
+  background-color: #2f3b29;
+  color: #fff;
   text-align: center;
-  padding: 20px 10px;
-  border-bottom: 3px solid #556b2f;
+  padding: 20px;
 }
 
 header img {
-  height: 90px;
-  width: auto;
+  width: 100px;
+  height: auto;
 }
 
 nav {
-  background-color: #3b4b3b;
-  padding: 10px;
+  background-color: #3d4a31;
   text-align: center;
+  padding: 10px;
 }
 
 nav a {
   color: #fff;
-  margin: 0 15px;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #c0e070;
+  color: #d6c88f;
 }
 
-/* Hero section */
 .hero {
-  background: url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-  color: white;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
   text-align: center;
   padding: 100px 20px;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 2em;
+  text-shadow: 2px 2px 5px #000;
 }
 
-.hero h1 {
-  font-size: 2.5em;
-  text-transform: uppercase;
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.hero p {
-  font-size: 1.2em;
-}
-
-/* Product grid */
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 40px;
-}
-
-.product {
-  background: #fff;
-  border: 2px solid #c7c7c7;
-  border-radius: 10px;
+.pack {
+  background-color: #fff;
+  border: 2px solid #3d4a31;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   text-align: center;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-  transition: transform 0.2s ease-in-out;
 }
 
-.product:hover {
-  transform: scale(1.03);
-}
-
-.product img {
+.pack img {
   width: 100%;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 8px;
 }
 
-.product h3 {
-  margin: 10px 0;
-  color: #2f3e2f;
-}
-
-.product p {
-  color: #333;
-  padding: 0 10px;
-}
-
-button {
-  background-color: #3b4b3b;
-  color: white;
+button, a.button {
+  background-color: #556b2f;
+  color: #fff;
   border: none;
-  padding: 10px 15px;
-  margin-bottom: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-button:hover {
-  background-color: #5b7b5b;
+button:hover, a.button:hover {
+  background-color: #6b8e23;
 }
 
-/* Footer */
+.contact form {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 footer {
-  background-color: #2f3e2f;
-  color: white;
+  background-color: #2f3b29;
+  color: #fff;
   text-align: center;
   padding: 20px;
-  margin-top: 50px;
-}
-
-/* Contact */
-.contact {
-  max-width: 600px;
-  margin: 40px auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .hero {
-    padding: 60px 20px;
-  }
+  font-size: 0.9em;
 }
 
