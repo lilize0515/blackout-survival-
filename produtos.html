@@ -3,62 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produtos - Blackout Survival</title>
+  <title>Produtos | Blackout Survival</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #1a1f1a;
+      font-family: 'Trebuchet MS', sans-serif;
+      color: #eee;
+      background-image: url('https://www.transparenttextures.com/patterns/camouflage.png');
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+    }
+
+    header img {
+      width: 140px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: #b0d49c;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .product {
+      background-color: #243024;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      color: #c3f0b8;
+    }
+
+    .product p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .price {
+      color: #b7ff8c;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    button {
+      background-color: #4a6b3f;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5b814d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      background-color: #0f130f;
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="Logo Blackout Survival">
-    <h1>BLACKOUT SURVIVAL</h1>
+    <img src="logo.png" alt="Blackout Survival Logo">
+    <h1>Os Nossos Produtos</h1>
   </header>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="produtos.html" class="active">Produtos</a>
-    <a href="sobre.html">Sobre Nós</a>
-    <a href="contacto.html">Contactos</a>
-  </nav>
+  <section class="product-grid">
 
-  <section class="products-section">
-    <h2>Nossos Kits de Sobrevivência</h2>
-    <p>Escolha o kit que se adapta às suas necessidades — desde o essencial até ao profissional.</p>
-
-    <div class="product-grid">
-
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1612817159949-fd8bda33b2cf?auto=format&fit=crop&w=900&q=80" alt="Pack Básico">
-        <h3>Pack Básico</h3>
-        <p>Kit essencial para emergências ligeiras.</p>
-        <p class="price">€59,99</p>
-        <a href="product-basico.html" class="button">Ver Detalhes</a>
-      </div>
-
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1606579331389-364f8f79ad2d?auto=format&fit=crop&w=900&q=80" alt="Pack Intermédio">
-        <h3>Pack Intermédio</h3>
-        <p>Equipamento completo para catástrofes e isolamento prolongado.</p>
-        <p class="price">€119,99</p>
-        <a href="product-intermedio.html" class="button">Ver Detalhes</a>
-      </div>
-
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1602332037703-7a42b5a9a28c?auto=format&fit=crop&w=900&q=80" alt="Pack Avançado">
-        <h3>Pack Avançado</h3>
-        <p>Kit profissional para sobrevivência extrema e missões prolongadas.</p>
-        <p class="price">€249,99</p>
-        <a href="product-avancado.html" class="button">Ver Detalhes</a>
-      </div>
-
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2017/08/07/22/27/survival-kit-2605964_1280.jpg" alt="Kit Básico">
+      <h3>Pack Básico</h3>
+      <p>Kit de sobrevivência essencial com ferramentas e primeiros socorros.</p>
+      <div class="price">€59,99</div>
+      <a href="basico.html"><button>Ver Detalhes</button></a>
     </div>
+
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2020/02/15/15/27/survival-4851373_1280.jpg" alt="Kit Intermédio">
+      <h3>Pack Intermédio</h3>
+      <p>Equipamento completo para situações de emergência prolongada.</p>
+      <div class="price">€119,99</div>
+      <a href="intermedio.html"><button>Ver Detalhes</button></a>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/05/08/survival-1869270_1280.jpg" alt="Kit Avançado">
+      <h3>Pack Avançado</h3>
+      <p>Kit profissional com ferramentas multifunções, lanternas e abrigo.</p>
+      <div class="price">€249,99</div>
+      <a href="avancado.html"><button>Ver Detalhes</button></a>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2019/09/07/20/12/flashlight-4459037_1280.jpg" alt="Lanterna Militar">
+      <h3>Lanterna Militar LED</h3>
+      <p>Lanterna de alta potência com foco ajustável e corpo à prova de água.</p>
+      <div class="price">€24,90</div>
+      <a href="#"><button>Comprar</button></a>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2015/12/02/16/52/knife-1070781_1280.jpg" alt="Faca de Sobrevivência">
+      <h3>Faca de Sobrevivência</h3>
+      <p>Lâmina resistente em aço inoxidável com cabo antiderrapante.</p>
+      <div class="price">€34,99</div>
+      <a href="#"><button>Comprar</button></a>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2017/03/05/20/33/tent-2120384_1280.jpg" alt="Tenda Compacta">
+      <h3>Tenda Compacta Militar</h3>
+      <p>Tenda leve, resistente à chuva, ideal para situações de emergência.</p>
+      <div class="price">€89,99</div>
+      <a href="#"><button>Comprar</button></a>
+    </div>
+
   </section>
 
   <footer>
-    <p>&copy; 2025 Blackout Survival. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Blackout Survival | Todos os direitos reservados.</p>
   </footer>
 
 </body>
 </html>
+
 
 
 
