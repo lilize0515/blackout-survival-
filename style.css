@@ -1,194 +1,158 @@
-/* ======== Blackout Survival - Estilo Militar ======== */
+/* ===== ESTILO GERAL ===== */
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
-  color: #1a1a1a;
-  background: #e5e5e0 url('https://www.transparenttextures.com/patterns/camouflage.png');
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #1b1f18;
+  color: #e5e5e5;
+  background-image: url('https://www.transparenttextures.com/patterns/camouflage.png');
+  background-repeat: repeat;
   background-size: contain;
 }
 
+/* ===== CABEÇALHO ===== */
 header {
-  background-color: #2f3b29;
-  color: #fff;
   text-align: center;
+  background-color: #2c3524;
+  color: #e5e5e5;
   padding: 20px;
+  border-bottom: 3px solid #5b6748;
 }
 
 header img {
-  width: 100px;
-  height: auto;
+  height: 80px;
 }
 
+header h1 {
+  margin: 10px 0 5px;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-style: italic;
+  color: #b7c3a5;
+}
+
+/* ===== MENU ===== */
 nav {
-  background-color: #3d4a31;
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #3a4430;
+  padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 nav a {
-  color: #fff;
+  color: #e5e5e5;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 20px;
   font-weight: bold;
   transition: 0.3s;
 }
 
-nav a:hover {
-  color: #d6c88f;
+nav a:hover,
+nav a.active {
+  color: #c9ff9d;
+  border-bottom: 2px solid #c9ff9d;
 }
 
+/* ===== SECÇÃO HERO ===== */
 .hero {
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-  font-size: 2em;
-  text-shadow: 2px 2px 5px #000;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.pack {
-  background-color: #fff;
-  border: 2px solid #3d4a31;
-  border-radius: 8px;
-  margin: 20px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  text-align: center;
-}
-
-.pack img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-button, a.button {
-  background-color: #556b2f;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover, a.button:hover {
-  background-color: #6b8e23;
-}
-
-.contact form {
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-footer {
-  background-color: #2f3b29;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-}
-/* Produtos à Unidade */
-.produtos-lista {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-#unidades h2 {
-  text-align: center;
-  color: #2f3b29;
-}
-/* ======== Carrossel e Menu Responsivo ======== */
-.carousel {
-  position: relative;
-  height: 60vh;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  width: 300%;
-  transition: 1s;
-}
-
-.slide {
-  flex: 1 0 100%;
-  background-size: cover;
-  background-position: center;
-  transition: opacity 1s;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.hero-text {
   text-align: center;
   padding: 60px 20px;
+  background: linear-gradient(rgba(20, 25, 17, 0.8), rgba(20, 25, 17, 0.8)),
+              url('https://cdn.pixabay.com/photo/2016/11/29/03/23/survival-1868756_1280.jpg') center/cover;
+  color: #fff;
 }
 
-.navbar {
-  background-color: #3d4a31;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+.hero h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #c9ff9d;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 1.8em;
-  color: white;
-  cursor: pointer;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-.menu.active {
-  display: flex;
-  flex-direction: column;
+/* ===== PRODUTOS ===== */
+.products-section {
+  padding: 50px 20px;
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    width: 100%;
-    background-color: #3d4a31;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .menu a {
-    display: block;
-    margin: 10px 0;
-  }
+.products-section h2 {
+  color: #c9ff9d;
+  margin-bottom: 10px;
 }
+
+.products-section p {
+  color: #d8e0d0;
+  margin-bottom: 40px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.product-card {
+  background-color: rgba(58, 68, 48, 0.9);
+  border: 1px solid #5b6748;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  color: #c9ff9d;
+  margin-top: 15px;
+}
+
+.product-card p {
+  color: #e5e5e5;
+  font-size: 0.95em;
+}
+
+.price {
+  font-weight: bold;
+  color: #b7ff7a;
+  font-size: 1.1em;
+}
+
+.button {
+  display: inline-block;
+  background-color: #5b6748;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #c9ff9d;
+  color: #1b1f18;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  text-align: center;
+  background-color: #2c3524;
+  color: #b7c3a5;
+  padding: 20px;
+  margin-top: 50px;
+  border-top: 2px solid #5b6748;
+}
+
 
