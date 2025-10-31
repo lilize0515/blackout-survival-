@@ -3,125 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produtos - Blackout Survival</title>
+  <title>Produtos | Blackout Survival</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
     <img src="logo.png" alt="Blackout Survival Logo">
     <h1>BLACKOUT SURVIVAL</h1>
-    <p>Preparado para o inesperado — a sua segurança é a nossa preocupação.</p>
+    <p>Equipamento de sobrevivência — pronto para qualquer situação.</p>
   </header>
 
-  <nav>
+  <nav class="navbar">
     <a href="index.html">Início</a>
-    <a href="produtos.html">Produtos</a>
+    <a href="produtos.html" class="active">Produtos</a>
     <a href="sobre.html">Sobre Nós</a>
     <a href="contacto.html">Contactos</a>
   </nav>
 
-  <section class="hero">
-    <h1>Os nossos produtos</h1>
-    <p>Escolha entre packs completos ou artigos individuais.</p>
-  </section>
+  <section class="products-section">
+    <h2>Kits de Sobrevivência</h2>
+    <p>Escolha o pack ideal para o seu nível de preparação.</p>
 
-  <section class="products">
-    <!-- Packs -->
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1612817159949-fd8bda33b2cf?auto=format&fit=crop&w=900&q=80" alt="Pack Básico">
-      <h3>Pack Básico</h3>
-      <p>Kit essencial para emergências pequenas.</p>
-      <p><strong>€59,99</strong></p>
-      <a href="product-basico.html"><button>Ver Detalhes</button></a>
-    </div>
+    <div class="products-grid">
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1598611362261-fb4d22e9b4a7?auto=format&fit=crop&w=900&q=80" alt="Pack Intermédio">
-      <h3>Pack Intermédio</h3>
-      <p>Equipamento completo para catástrofes naturais.</p>
-      <p><strong>€119,99</strong></p>
-      <a href="product-intermedio.html"><button>Ver Detalhes</button></a>
-    </div>
+      <!-- PACK BÁSICO -->
+      <div class="product-card">
+        <img src="https://cdn.pixabay.com/photo/2017/03/23/16/54/survival-2178747_1280.jpg" alt="Kit Básico de Sobrevivência">
+        <h3>Pack Básico</h3>
+        <p>O essencial para emergências leves — lanterna, manta térmica, kit de primeiros socorros e ferramenta multifunções.</p>
+        <p class="price">€59,99 / unidade</p>
+        <a href="product-basico.html" class="button">Ver Detalhes</a>
+      </div>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&w=900&q=80" alt="Pack Avançado">
-      <h3>Pack Avançado</h3>
-      <p>Kit profissional com acessórios de alta qualidade.</p>
-      <p><strong>€249,99</strong></p>
-      <a href="product-avancado.html"><button>Ver Detalhes</button></a>
-    </div>
+      <!-- PACK INTERMÉDIO -->
+      <div class="product-card">
+        <img src="https://cdn.pixabay.com/photo/2021/03/10/15/45/survival-kit-6084480_1280.jpg" alt="Kit Intermédio de Sobrevivência">
+        <h3>Pack Intermédio</h3>
+        <p>Inclui ferramentas, primeiros socorros, abrigo leve e ração energética — ideal para emergências mais prolongadas.</p>
+        <p class="price">€119,99 / unidade</p>
+        <a href="product-intermedio.html" class="button">Ver Detalhes</a>
+      </div>
 
-    <!-- Produtos à unidade -->
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1604052445911-9f65d79f39c9?auto=format&fit=crop&w=900&q=80" alt="Lanterna Tática">
-      <h3>Lanterna Tática</h3>
-      <p>Resistente à água, recarregável, iluminação LED forte.</p>
-      <p><strong>€24,99</strong></p>
-      <button>Comprar Unidade</button>
-    </div>
+      <!-- PACK AVANÇADO -->
+      <div class="product-card">
+        <img src="https://cdn.pixabay.com/photo/2019/11/01/15/25/survival-4594164_1280.jpg" alt="Kit Avançado de Sobrevivência">
+        <h3>Pack Avançado</h3>
+        <p>Equipamento completo de sobrevivência militar com ferramentas profissionais, abrigo, purificador de água e alimentação.</p>
+        <p class="price">€249,99 / unidade</p>
+        <a href="product-avancado.html" class="button">Ver Detalhes</a>
+      </div>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1617137968427-85924b6d99b5?auto=format&fit=crop&w=900&q=80" alt="Canivete Multiusos">
-      <h3>Canivete Multiusos</h3>
-      <p>Compacto, ideal para acampamentos e situações de emergência.</p>
-      <p><strong>€19,99</strong></p>
-      <button>Comprar Unidade</button>
-    </div>
-
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1602524819714-14e0e72a6b57?auto=format&fit=crop&w=900&q=80" alt="Filtro de Água Portátil">
-      <h3>Filtro de Água Portátil</h3>
-      <p>Purifica água de rios e lagos em segundos. Essencial para sobrevivência.</p>
-      <p><strong>€34,99</strong></p>
-      <button>Comprar Unidade</button>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Blackout Survival. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Blackout Survival | Segurança e Preparação para Todos</p>
   </footer>
-<section id="unidades">
-  <h2>Produtos à Unidade</h2>
-  <p>Escolha o que precisa — cada item foi selecionado pela sua qualidade e durabilidade.</p>
-
-  <div class="produtos-lista">
-
-    <div class="pack">
-      <img src="https://cdn.pixabay.com/photo/2017/08/07/22/36/flashlight-2605994_1280.jpg" alt="Lanterna de Emergência">
-      <h3>Lanterna de Emergência</h3>
-      <p>Potente e recarregável — ideal para cortes de energia.</p>
-      <p><strong>Preço: €24,99</strong></p>
-      <a href="contacto.html" class="button">Comprar</a>
-    </div>
-
-    <div class="pack">
-      <img src="https://cdn.pixabay.com/photo/2015/11/19/21/11/knife-1059731_1280.jpg" alt="Faca Tática">
-      <h3>Faca Tática</h3>
-      <p>Lâmina afiada e resistente — perfeita para sobrevivência.</p>
-      <p><strong>Preço: €34,99</strong></p>
-      <a href="contacto.html" class="button">Comprar</a>
-    </div>
-
-    <div class="pack">
-      <img src="https://cdn.pixabay.com/photo/2016/11/29/09/32/compass-1869978_1280.jpg" alt="Bússola Profissional">
-      <h3>Bússola Profissional</h3>
-      <p>Alta precisão — essencial para navegação em campo.</p>
-      <p><strong>Preço: €14,99</strong></p>
-      <a href="contacto.html" class="button">Comprar</a>
-    </div>
-
-    <div class="pack">
-      <img src="https://cdn.pixabay.com/photo/2017/01/10/19/05/backpack-1964692_1280.jpg" alt="Mochila de Sobrevivência">
-      <h3>Mochila de Sobrevivência</h3>
-      <p>Capacidade de 45L, resistente à água e de alta durabilidade.</p>
-      <p><strong>Preço: €69,99</strong></p>
-      <a href="contacto.html" class="button">Comprar</a>
-    </div>
-
-  </div>
-</section>
 
 </body>
 </html>
+
 
