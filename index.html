@@ -6,9 +6,7 @@
   <title>Blackout Survival - Kits de Sobrevivência</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
- 
 <body>
 
   <header>
@@ -55,9 +53,11 @@
 
     // CARROSSEL AUTOMÁTICO
     let slideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
     function showSlides() {
-      slides.forEach((slide, i) => slide.style.opacity = (i === slideIndex ? '1' : '0'));
+      const slides = document.querySelectorAll('.slide');
+      slides.forEach((slide, i) => {
+        slide.style.opacity = (i === slideIndex ? '1' : '0');
+      });
       slideIndex = (slideIndex + 1) % slides.length;
       setTimeout(showSlides, 4000);
     }
@@ -65,5 +65,7 @@
   </script>
 
 </body>
+</html>
+
 
 
