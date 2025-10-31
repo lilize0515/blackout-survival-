@@ -1,104 +1,88 @@
-/* ===== ESTILO GERAL ===== */
+/* ======== TEMA GERAL ======== */
 body {
   margin: 0;
   font-family: 'Trebuchet MS', sans-serif;
-  background-color: #1b1f18;
-  color: #e5e5e5;
-  background-image: url('https://www.transparenttextures.com/patterns/camouflage.png');
-  background-repeat: repeat;
-  background-size: contain;
+  background-color: #1c1f1a;
+  background-image: url('https://www.transparenttextures.com/patterns/camo-fabric.png');
+  color: #f2f2f2;
+  text-align: center;
 }
 
-/* ===== CABEÇALHO ===== */
+/* ======== CABEÇALHO ======== */
 header {
-  text-align: center;
-  background-color: #2c3524;
-  color: #e5e5e5;
+  background-color: #2e3528;
   padding: 20px;
-  border-bottom: 3px solid #5b6748;
+  border-bottom: 3px solid #4d5d40;
 }
 
 header img {
-  height: 80px;
+  width: 90px;
 }
 
 header h1 {
-  margin: 10px 0 5px;
-  letter-spacing: 2px;
+  color: #9acd32;
+  margin: 10px 0 0 0;
 }
 
 header p {
-  font-style: italic;
-  color: #b7c3a5;
+  color: #c9d1b4;
+  margin: 5px 0 0 0;
 }
 
-/* ===== MENU ===== */
+/* ======== NAVEGAÇÃO ======== */
 nav {
-  display: flex;
-  justify-content: center;
-  background-color: #3a4430;
-  padding: 10px 0;
-  flex-wrap: wrap;
+  background-color: #3b4634;
+  padding: 10px;
 }
 
 nav a {
-  color: #e5e5e5;
+  color: #e6e6e6;
+  margin: 0 15px;
   text-decoration: none;
-  margin: 0 20px;
   font-weight: bold;
-  transition: 0.3s;
 }
 
-nav a:hover,
-nav a.active {
-  color: #c9ff9d;
-  border-bottom: 2px solid #c9ff9d;
+nav a:hover, nav a.active {
+  color: #9acd32;
+  border-bottom: 2px solid #9acd32;
 }
 
-/* ===== SECÇÃO HERO ===== */
+/* ======== SEÇÕES ======== */
 .hero {
-  text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(rgba(20, 25, 17, 0.8), rgba(20, 25, 17, 0.8)),
-              url('https://cdn.pixabay.com/photo/2016/11/29/03/23/survival-1868756_1280.jpg') center/cover;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://cdn.pixabay.com/photo/2017/08/07/22/27/survival-kit-2605964_1280.jpg') center/cover;
   color: #fff;
 }
 
 .hero h1 {
-  font-size: 2.2em;
+  font-size: 2.4em;
   margin-bottom: 10px;
-  color: #c9ff9d;
 }
 
-/* ===== PRODUTOS ===== */
+.hero p {
+  font-size: 1.2em;
+}
+
+/* ======== PRODUTOS ======== */
 .products-section {
   padding: 50px 20px;
-  text-align: center;
 }
 
-.products-section h2 {
-  color: #c9ff9d;
-  margin-bottom: 10px;
-}
-
-.products-section p {
-  color: #d8e0d0;
-  margin-bottom: 40px;
-}
-
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  padding: 0 20px;
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .product-card {
-  background-color: rgba(58, 68, 48, 0.9);
-  border: 1px solid #5b6748;
-  border-radius: 12px;
+  background-color: #2a2f25;
+  border: 1px solid #3d4737;
+  border-radius: 10px;
+  width: 300px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(10, 10, 10, 0.6);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   transition: transform 0.3s ease;
 }
 
@@ -108,51 +92,56 @@ nav a.active {
 
 .product-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .product-card h3 {
-  color: #c9ff9d;
-  margin-top: 15px;
+  color: #9acd32;
+  margin-bottom: 10px;
 }
 
 .product-card p {
-  color: #e5e5e5;
-  font-size: 0.95em;
+  color: #d7d7d7;
 }
 
 .price {
+  font-size: 1.2em;
+  color: #c9d1b4;
   font-weight: bold;
-  color: #b7ff7a;
-  font-size: 1.1em;
 }
 
 .button {
   display: inline-block;
-  background-color: #5b6748;
-  color: #fff;
-  text-decoration: none;
   padding: 10px 20px;
-  border-radius: 8px;
+  background-color: #6b8e23;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
   margin-top: 10px;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #c9ff9d;
-  color: #1b1f18;
+  background-color: #9acd32;
 }
 
-/* ===== RODAPÉ ===== */
+/* ======== RODAPÉ ======== */
 footer {
-  text-align: center;
-  background-color: #2c3524;
-  color: #b7c3a5;
-  padding: 20px;
-  margin-top: 50px;
-  border-top: 2px solid #5b6748;
+  background-color: #2e3528;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #a9b79c;
+  margin-top: 40px;
 }
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 
