@@ -57,5 +57,61 @@
   </footer>
 
 </body>
-</html>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Blackout Survival Logo">
+    <h1>BLACKOUT SURVIVAL</h1>
+  </header>
+
+  <!-- MENU RESPONSIVO -->
+  <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="menu">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="contacto.html">Contactos</a>
+    </div>
+  </nav>
+
+  <!-- CARROSSEL DE IMAGENS -->
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/29/05/08/survival-1869270_1280.jpg');"></div>
+      <div class="slide" style="background-image: url('https://cdn.pixabay.com/photo/2017/08/07/22/27/survival-kit-2605964_1280.jpg');"></div>
+      <div class="slide" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/29/03/23/survival-1868756_1280.jpg');"></div>
+    </div>
+  </div>
+
+  <!-- TEXTO PRINCIPAL -->
+  <section class="hero-text">
+    <h1>Preparado para o inesperado?</h1>
+    <p>Aqui está tudo o que precisa — porque a sua segurança é a nossa preocupação.</p>
+    <a href="produtos.html" class="button">Ver Produtos</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Blackout Survival | Pagamentos via PayPal, Revolut e Conta Bancária</p>
+  </footer>
+
+  <script>
+    // MENU RESPONSIVO
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('active');
+    }
+
+    // CARROSSEL AUTOMÁTICO
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    function showSlides() {
+      slides.forEach((slide, i) => slide.style.opacity = (i === slideIndex ? '1' : '0'));
+      slideIndex = (slideIndex + 1) % slides.length;
+      setTimeout(showSlides, 4000);
+    }
+    window.onload = showSlides;
+  </script>
+
+</body>
+
 
