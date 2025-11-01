@@ -1,167 +1,91 @@
-/* ---------- ESTILO GERAL ---------- */
 body {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #2f332a;
+  color: #e0e0e0;
   margin: 0;
   padding: 0;
-  color: #f5f5f5;
-  background: #2e2e2e url('https://www.transparenttextures.com/patterns/camouflage.png');
-  background-size: 400px;
+  background-image: url('https://www.transparenttextures.com/patterns/camo-fabric.png');
 }
 
-/* ---------- CABEÇALHO ---------- */
 header {
   text-align: center;
-  padding: 30px 10px;
-  background: linear-gradient(to bottom, #3c3f33, #1c1e18);
-  border-bottom: 3px solid #5a6b3e;
+  padding: 20px;
+  background-color: #1b1e17;
+  border-bottom: 3px solid #3b3f32;
 }
 
-header img.logo {
-  width: 120px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+header img {
+  width: 90px;
 }
 
-header h1 {
-  color: #b7c77a;
-  font-size: 2.4em;
-  letter-spacing: 2px;
-}
-
-header p {
-  color: #d8d8d8;
-  font-style: italic;
-}
-
-/* ---------- NAVEGAÇÃO ---------- */
 nav {
-  background-color: #202318;
+  background-color: #3b3f32;
   display: flex;
   justify-content: center;
-  padding: 10px;
-  border-bottom: 2px solid #5a6b3e;
+  gap: 20px;
+  padding: 12px;
 }
 
 nav a {
-  color: #dcdcdc;
+  color: #d1d1d1;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: bold;
-  transition: color 0.3s, transform 0.3s;
 }
 
-nav a:hover,
-nav a.active {
-  color: #b7c77a;
-  transform: scale(1.05);
+nav a:hover {
+  color: #aaff88;
 }
 
-/* ---------- SECÇÃO DE PRODUTOS ---------- */
-.product-section {
-  padding: 40px 10%;
-  background-color: rgba(34, 36, 29, 0.95);
+.hero {
   text-align: center;
+  padding: 40px 20px;
 }
 
-.product-section h2 {
-  font-size: 2em;
-  color: #b7c77a;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  border-bottom: 2px solid #5a6b3e;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* ---------- GRELHA DE PRODUTOS ---------- */
-.product-grid {
+.products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 25px;
+  padding: 40px;
 }
 
-.product-card {
-  background: #35382d;
-  border: 2px solid #5a6b3e;
-  border-radius: 15px;
-  padding: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.product-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-}
-
-.product-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.product {
+  background-color: #3b3f32;
   border-radius: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #5a6b3e;
-}
-
-.product-card h3 {
-  color: #dce7b3;
-  margin: 10px 0;
-}
-
-.product-card p {
-  color: #c5c5c5;
-  font-size: 0.95em;
-}
-
-.price {
-  color: #b7c77a;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-/* ---------- BOTÕES ---------- */
-.btn {
-  display: inline-block;
-  background-color: #5a6b3e;
-  color: white;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  margin: 5px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-  background-color: #708a4e;
-  transform: scale(1.05);
-}
-
-.buttons {
-  margin-top: 10px;
-}
-
-/* ---------- RODAPÉ ---------- */
-footer {
-  background-color: #202318;
-  color: #dcdcdc;
   text-align: center;
-  padding: 20px 10px;
-  border-top: 2px solid #5a6b3e;
-  font-size: 0.9em;
+  padding: 15px;
+  box-shadow: 0 0 10px #111;
 }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.6em;
-  }
-  nav {
-    flex-direction: column;
-  }
-  nav a {
-    margin: 8px 0;
-  }
-  .product-card img {
-    height: 180px;
-  }
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  color: #aaff88;
+}
+
+button {
+  background-color: #aaff88;
+  color: #1b1e17;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #8fd76a;
+}
+
+footer {
+  text-align: center;
+  background-color: #1b1e17;
+  color: #d1d1d1;
+  padding: 15px;
+  margin-top: 40px;
 }
 
 
