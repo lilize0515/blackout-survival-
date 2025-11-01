@@ -1,71 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blackout Survival - Kits de Sobrevivência</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+      background-image: url('https://cdn.pixabay.com/photo/2017/01/14/19/46/camouflage-1977850_1280.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: repeat;
+      color: #f5f5f5;
+    }
+    header {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+    }
+    header h1 {
+      margin-top: 10px;
+      font-size: 2.2em;
+      color: #c7b36b;
+    }
+    header p {
+      font-style: italic;
+      color: #ddd;
+    }
+    nav {
+      text-align: center;
+      background-color: #2d3a2f;
+      padding: 12px;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #c7b36b;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .hero h1 {
+      font-size: 2em;
+      color: #c7b36b;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #eee;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+    .product {
+      background-color: rgba(45, 58, 47, 0.9);
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: scale(1.03);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product h3 {
+      color: #c7b36b;
+      margin-top: 10px;
+    }
+    .product p {
+      color: #eee;
+      font-size: 0.95em;
+    }
+    .product button {
+      background-color: #c7b36b;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #1b1b1b;
+      font-weight: bold;
+    }
+    .product button:hover {
+      background-color: #e0ca7c;
+    }
+    footer {
+      text-align: center;
+      background-color: rgba(0,0,0,0.7);
+      padding: 15px;
+      color: #ddd;
+      margin-top: 50px;
+    }
+  </style>
 </head>
-
 <body>
 
   <header>
-    <img src="logo.png" alt="Blackout Survival Logo">
+    <img src="logo.png" alt="Logo Blackout Survival" />
     <h1>BLACKOUT SURVIVAL</h1>
+    <p>Preparado para o inesperado — a sua segurança é a nossa preocupação.</p>
   </header>
 
-  <!-- MENU RESPONSIVO -->
-  <nav class="navbar">
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <div class="menu">
-      <a href="index.html">Início</a>
-      <a href="produtos.html">Produtos</a>
-      <a href="sobre.html">Sobre Nós</a>
-      <a href="contacto.html">Contactos</a>
-    </div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="contacto.html">Contactos</a>
   </nav>
 
-  <!-- CARROSSEL DE IMAGENS -->
-  <div class="carousel">
-    <div class="slides">
-      <div class="slide" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/29/05/08/survival-1869270_1280.jpg');"></div>
-      <div class="slide" style="background-image: url('https://cdn.pixabay.com/photo/2017/08/07/22/27/survival-kit-2605964_1280.jpg');"></div>
-      <div class="slide" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/29/03/23/survival-1868756_1280.jpg');"></div>
-    </div>
-  </div>
+  <section class="hero">
+    <h1>Prepare-se para o inesperado</h1>
+    <p>Aqui encontra tudo o que precisa para garantir a sua segurança.</p>
+  </section>
 
-  <!-- TEXTO PRINCIPAL -->
-  <section class="hero-text">
-    <h1>Preparado para o inesperado?</h1>
-    <p>Aqui está tudo o que precisa — porque a sua segurança é a nossa preocupação.</p>
-    <a href="produtos.html" class="button">Ver Produtos</a>
+  <section class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1612817159949-fd8bda33b2cf?auto=format&fit=crop&w=900&q=80" alt="Kit Básico" />
+      <h3>Pack Básico</h3>
+      <p>Kit essencial de sobrevivência para emergências ligeiras.</p>
+      <p><strong>€59,99</strong></p>
+      <a href="product-basico.html"><button>Ver Detalhes</button></a>
+      <a href="contacto.html"><button>Comprar</button></a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1598611362261-fb4d22e9b4a7?auto=format&fit=crop&w=900&q=80" alt="Kit Intermédio" />
+      <h3>Pack Intermédio</h3>
+      <p>Equipamento completo para situações de catástrofe natural.</p>
+      <p><strong>€119,99</strong></p>
+      <a href="product-intermedio.html"><button>Ver Detalhes</button></a>
+      <a href="contacto.html"><button>Comprar</button></a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&w=900&q=80" alt="Kit Avançado" />
+      <h3>Pack Avançado</h3>
+      <p>Kit profissional de sobrevivência com todos os acessórios.</p>
+      <p><strong>€249,99</strong></p>
+      <a href="product-avancado.html"><button>Ver Detalhes</button></a>
+      <a href="contacto.html"><button>Comprar</button></a>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Blackout Survival | Pagamentos via PayPal, Revolut e Conta Bancária</p>
   </footer>
 
-  <script>
-    // MENU RESPONSIVO
-    function toggleMenu() {
-      document.querySelector('.menu').classList.toggle('active');
-    }
-
-    // CARROSSEL AUTOMÁTICO
-    let slideIndex = 0;
-    function showSlides() {
-      const slides = document.querySelectorAll('.slide');
-      slides.forEach((slide, i) => {
-        slide.style.opacity = (i === slideIndex ? '1' : '0');
-      });
-      slideIndex = (slideIndex + 1) % slides.length;
-      setTimeout(showSlides, 4000);
-    }
-    window.onload = showSlides;
-  </script>
-
 </body>
 </html>
+
 
 
 
